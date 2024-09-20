@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #589943;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Убедитесь, что заголовок находится поверх других элементов */
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Добавьте тень для визуального отделения */
+}
+
+.logoBlock {
+    width: auto;
+    height: 150px;
+
+    img {
+        height: 150px;
+    }
+}
+
+.headerMenu {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 50px;
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.menuImages {
+    height: 90px;
+    cursor: pointer;
+}

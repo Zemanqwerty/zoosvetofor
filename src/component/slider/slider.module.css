@@ -1,0 +1,71 @@
+/* App.css */
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.slide {
+    height: auto !important;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderImg {
+    width: 100%;
+    height: auto;
+}
+
+.prevArrow {
+    height: 40px;
+    width: 40px;
+    transform: rotate(180deg);
+    transition: .3s;
+    z-index: 100;
+}
+
+/* .prevArrow :hover {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+
+transition: .3s;
+} */
+
+.nextArrow {
+    height: 40px;
+    width: 40px;
+    transition: .3s;
+    z-index: 100;
+}
+
+.arrow {
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.arrow :hover {
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.4);
+-moz-box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.4);
+box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.4);
+
+transition: .3s;
+}
+
+.arrowBlock {
+    padding-top: 35px;
+    width: 100%;
+    height: 30px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+    background: none;
+}
