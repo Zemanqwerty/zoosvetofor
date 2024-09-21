@@ -42,9 +42,9 @@ const Slider: FC = () => {
                         <SwiperSlide className={styles.slide}>
                                     <img className={styles.sliderImg} src={b4} alt="b1" />
                         </SwiperSlide>
-                        <SwiperSlide className={styles.slide}>
+                        {/* <SwiperSlide className={styles.slide}>
                                     <img className={styles.sliderImg} src={b5} alt="b1" />
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                     </Swiper>
                     <div className={styles.arrowBlock}>
                         <div onClick={prevSlide} className={styles.arrow}>

@@ -9,18 +9,20 @@ import whatsapp from '../../source/whatsapp.png'
 const Footer: FC = () => {
     return (
         <div className={styles.footer}>
-            <img src={logo} alt="zoo" className={styles.footerLogo} />
-            <ul className={styles.headerMenu}>
-                <li>
-                    <img className={styles.menuImages} src={vk} alt="vkontakte" />
-                </li>
-                <li>
-                    <img className={styles.menuImages} src={telegram} alt="telegram" />
-                </li>
-                <li>
-                    <img className={styles.menuImages} src={whatsapp} alt="whatsapp" />
-                </li>
-            </ul>
+            <div className={styles.footerContent}>
+                <img src={logo} alt="zoo" className={styles.footerLogo} />
+                <ul className={styles.headerMenu}>
+                    <li>
+                        <img className={styles.menuImages} src={vk} alt="vkontakte" />
+                    </li>
+                    <li>
+                        <img className={styles.menuImages} src={telegram} alt="telegram" />
+                    </li>
+                    <li>
+                        <img className={styles.menuImages} src={whatsapp} alt="whatsapp" />
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

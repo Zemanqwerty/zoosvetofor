@@ -9,20 +9,22 @@ const Header: FC = () => {
 
     return (
         <div className={styles.header}>
-            <div className={styles.logoBlock}>
-                <img src={logo} alt="zoo" />
+            <div className={styles.headerContent}>
+                <div className={styles.logoBlock}>
+                    <img src={logo} alt="zoo" />
+                </div>
+                <ul className={styles.headerMenu}>
+                    <li>
+                        <img className={styles.menuImages} src={vk} alt="vkontakte" />
+                    </li>
+                    <li>
+                        <img className={styles.menuImages} src={telegram} alt="telegram" />
+                    </li>
+                    <li>
+                        <img className={styles.menuImages} src={whatsapp} alt="whatsapp" />
+                    </li>
+                </ul>
             </div>
-            <ul className={styles.headerMenu}>
-                <li>
-                    <img className={styles.menuImages} src={vk} alt="vkontakte" />
-                </li>
-                <li>
-                    <img className={styles.menuImages} src={telegram} alt="telegram" />
-                </li>
-                <li>
-                    <img className={styles.menuImages} src={whatsapp} alt="whatsapp" />
-                </li>
-            </ul>
         </div>
     )
 };

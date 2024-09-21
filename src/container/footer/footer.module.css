@@ -8,6 +8,16 @@
     grid-gap: 20px;
 }
 
+.footerContent {
+    width: 100%;
+    max-width: 1940px;
+    height: 100px;
+    background-color: #589943;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footerLogo {
     height: 100%;
 }
@@ -24,4 +34,11 @@
 .menuImages {
     height: 60px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .footerLogo {
+        display: none;
+    }
 }

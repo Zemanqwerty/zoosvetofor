@@ -9,7 +9,7 @@
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #589943;
 
     position: fixed;
@@ -18,6 +18,14 @@
     z-index: 1000; /* Убедитесь, что заголовок находится поверх других элементов */
     padding: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Добавьте тень для визуального отделения */
+}
+
+.headerContent {
+    width: 100%;
+    max-width: 1940px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logoBlock {
@@ -42,4 +50,35 @@
 .menuImages {
     height: 90px;
     cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    width: 17px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона трека */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1b872b; /* Цвет ползунка */
+    border-radius: 6px; /* Закругление углов ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0d4d17; /* Цвет ползунка при наведении */
+}
+
+@media (max-width: 768px) {
+
+
+    .headerMenu {
+        display: none;
+    }
+
+    .logoBlock {
+        width: 100%;
+        height: 150px;
+    }
 }

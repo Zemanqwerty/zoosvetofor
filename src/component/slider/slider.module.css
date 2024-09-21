@@ -47,6 +47,7 @@ transition: .3s;
     width: auto;
     border-radius: 50%;
     transition: .3s;
+    cursor: pointer;
 }
 
 .arrow :hover {
@@ -68,4 +69,13 @@ transition: .3s;
     justify-content: center;
     grid-gap: 30px;
     background: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .slide {
+        width: 100% !important;
+        height: auto !important;
+    }
 }
