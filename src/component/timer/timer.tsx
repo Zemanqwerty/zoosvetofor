@@ -56,9 +56,32 @@ const Timer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   return (
     <div className={styles.timerBlock}>
       {days > 0 || hours > 0 || minutes > 0 || seconds > 0 ? (
-        <p className={styles.timerText}>
-          <b>До открытия: {days} {daysWord}, {hours} {hoursWord}, {minutes} {minutesWord}, {seconds} {secondsWord}!</b>
-        </p>
+        <div className={styles.timer}>
+          <div className={styles.leftText}>
+            До открытия
+          </div>
+          <div className={styles.timerValues}>
+            <div className={styles.timerEl}>
+              <div className={styles.value}>{days}</div>
+              <div className={styles.valueWord}>{daysWord}</div>
+            </div>
+            :
+            <div className={styles.timerEl}>
+              <div className={styles.value}>{hours}</div>
+              <div className={styles.valueWord}>{hoursWord}</div>
+            </div>
+            :
+            <div className={styles.timerEl}>
+              <div className={styles.value}>{minutes}</div>
+              <div className={styles.valueWord}>{minutesWord}</div>
+            </div>
+            :
+            <div className={styles.timerEl}>
+              <div className={styles.value}>{seconds}</div>
+              <div className={styles.valueWord}>{secondsWord}</div>
+            </div>
+          </div>
+        </div>
       ) : (
         <p className={styles.timerText}><b>Открытие уже началось!</b></p>
       )}

@@ -22,7 +22,7 @@
 
 .obzacText {
     font-size: 26px;
-    color: rgb(31, 31, 31);
+    color: rgb(219, 219, 219);
     text-align: left;
 }
 
@@ -32,12 +32,20 @@
     margin-top: -15px;
 }
 
-.b5 {
+.contentImgBlock {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b5 {
+    width: 50%;
 }
 
 .greenContent {
-    color: #589943;
+    color: white;
+    font-size: 28px;
     padding: 0 0 0 10px;
     display: inline;
 }
@@ -58,13 +66,21 @@
     
     .obzacText {
         font-size: 18px;
-        color: rgb(31, 31, 31);
+        color: rgb(219, 219, 219);
         text-align: left;
+    }
+
+    .greenContent {
+        font-size: 20px;
     }
     
     .images {
         height: 30px;
         width: 30px;
         margin-top: -5px;
+    }
+
+    .b5 {
+        width: 100%;
     }
 }

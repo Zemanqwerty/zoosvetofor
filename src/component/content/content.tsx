@@ -3,7 +3,7 @@ import styles from './content.module.css'
 import help from '../../source/help.png'
 import pet from '../../source/pet.png'
 import basket from '../../source/basket.png'
-import b5 from '../../source/b5.png'
+import b5 from '../../source/bb5.png'
 
 const Content: FC = () => {
     return (
@@ -28,7 +28,9 @@ const Content: FC = () => {
                 Каждый покупатель дискаунтера становится участником клуба светзоофор, который дает возможность на приобретение всех зоотоваров по специальной цене <p className={styles.greenContent}>-15% от цены указанной на ценнике</p>. Правила простые: пришел, завел клубную карту, сэкономил!
                 </div>
             </div>
-            <img src={b5} alt="" className={styles.b5} />
+            <div className={styles.contentImgBlock}>
+                <img src={b5} alt="" className={styles.b5} />
+            </div>
         </div>
     )
 }

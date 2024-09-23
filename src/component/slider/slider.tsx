@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
 import vector from '../../source/arrow1.png'
 import styles from './slider.module.css'
-import b1 from '../../source/b1.png'
-import b2 from '../../source/b2.png'
-import b3 from '../../source/b3.png'
-import b4 from '../../source/b4.png'
+import b1 from '../../source/bb1.png'
+import b2 from '../../source/bb2.png'
+import b3 from '../../source/bb3.png'
+import b4 from '../../source/bb4.png'
 import b5 from '../../source/b5.png'
 
 
@@ -26,7 +26,7 @@ const Slider: FC = () => {
         <>
         <Swiper
                     className=""
-                    spaceBetween={50}
+                    spaceBetween={100}
                     slidesPerView={1}
                     onSwiper={(swiper) => setSwiper(swiper)}
                     >

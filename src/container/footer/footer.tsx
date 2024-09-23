@@ -12,15 +12,9 @@ const Footer: FC = () => {
             <div className={styles.footerContent}>
                 <img src={logo} alt="zoo" className={styles.footerLogo} />
                 <ul className={styles.headerMenu}>
-                    <li>
-                        <img className={styles.menuImages} src={vk} alt="vkontakte" />
-                    </li>
-                    <li>
+                    <a href='https://t.me/svetzoofor'>
                         <img className={styles.menuImages} src={telegram} alt="telegram" />
-                    </li>
-                    <li>
-                        <img className={styles.menuImages} src={whatsapp} alt="whatsapp" />
-                    </li>
+                    </a>
                 </ul>
             </div>
         </div>

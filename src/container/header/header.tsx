@@ -14,15 +14,9 @@ const Header: FC = () => {
                     <img src={logo} alt="zoo" />
                 </div>
                 <ul className={styles.headerMenu}>
-                    <li>
-                        <img className={styles.menuImages} src={vk} alt="vkontakte" />
-                    </li>
-                    <li>
+                    <a href="https://t.me/svetzoofor">
                         <img className={styles.menuImages} src={telegram} alt="telegram" />
-                    </li>
-                    <li>
-                        <img className={styles.menuImages} src={whatsapp} alt="whatsapp" />
-                    </li>
+                    </a>
                 </ul>
             </div>
         </div>
